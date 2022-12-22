@@ -11,7 +11,7 @@ const corsOptions = {
   optionsSuccessStatus: 200
 }
 
-app.use(cors())
+app.use(cors(corsOptions))
 
 app.get("/recaptcha", async (req, res) => {
   const { token } = req.query;
